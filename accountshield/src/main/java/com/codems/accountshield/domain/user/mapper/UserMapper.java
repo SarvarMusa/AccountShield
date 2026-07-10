@@ -1,23 +1,11 @@
 package com.codems.accountshield.domain.user.mapper;
 
-import org.springframework.stereotype.Component;
-
 import com.codems.accountshield.domain.user.dto.UserResponse;
 import com.codems.accountshield.domain.user.entity.User;
+import org.mapstruct.Mapper;
+import org.mapstruct.MappingConstants;
 
-@Component
-public class UserMapper {
-
-    public UserResponse toResponse(User user) {
-        return new UserResponse(
-                user.getId(),
-                user.getName(),
-                user.getEmail(),
-                user.getRole(),
-                user.isEmailVerified(),
-                user.isAccountLocked(),
-                user.getCreatedAt(),
-                user.getUpdatedAt()
-        );
-    }
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
+public interface UserMapper {
+    UserResponse toResponse(User user);
 }
