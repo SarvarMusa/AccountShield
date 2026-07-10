@@ -1,9 +1,0 @@
-/.idea/
-/accountshield/.idea/
-/accountshield/*.iml
-/accountshield/target/
-/target/
-
-*.env
-.env*
-!/accountshield/.env.example
