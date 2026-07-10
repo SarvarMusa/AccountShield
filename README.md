@@ -149,7 +149,3 @@ The test suite uses:
 - JUnit 5
 - Mockito
 - AssertJ
-
-Current tests cover the main service-level flows around registration, login, refresh token rotation, profile updates, admin user operations, login attempt locking, validation, and the custom authentication provider. Test data is organized with Test Mother fixtures to keep test cases focused on behavior.
-
-There is no JaCoCo coverage report configured yet, so coverage is verified by the test suite rather than a generated percentage report.
